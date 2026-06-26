@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IFI",
+    "III"
+  ],
+  "key": {
+    "I": {"item": "minecraft:iron_ingot"},
+    "F": {"item": "bttfmod:flux_capacitor"}
+  },
+  "result": {"item": "bttfmod:delorean_spawn", "count": 1}
+}

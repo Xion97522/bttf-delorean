@@ -1,0 +1,10 @@
+{
+  "delorean_engine": {
+    "category": "neutral",
+    "sounds": [{"name": "bttfmod:delorean_engine", "stream": true}]
+  },
+  "time_travel": {
+    "category": "neutral",
+    "sounds": [{"name": "bttfmod:time_travel"}]
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.delorean",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 8,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -28,
+                2,
+                -52
+              ],
+              "size": [
+                56,
+                10,
+                76
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -20,
+                12,
+                -24
+              ],
+              "size": [
+                40,
+                12,
+                44
+              ],
+              "uv": [
+                0,
+                20
+              ]
+            },
+            {
+              "origin": [
+                -26,
+                8,
+                -56
+              ],
+              "size": [
+                52,
+                6,
+                8
+              ],
+              "uv": [
+                0,
+                44
+              ]
+            },
+            {
+              "origin": [
+                -26,
+                6,
+                24
+              ],
+              "size": [
+                52,
+                8,
+                12
+              ],
+              "uv": [
+                30,
+                44
+              ]
+            }
+          ]
+        },
+        {
+          "name": "door_left",
+          "parent": "body",
+          "pivot": [
+            -28,
+            12,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -30,
+                12,
+                -22
+              ],
+              "size": [
+                2,
+                10,
+                40
+              ],
+              "uv": [
+                0,
+                32
+              ]
+            }
+          ]
+        },
+        {
+          "name": "door_right",
+          "parent": "body",
+          "pivot": [
+            28,
+            12,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                28,
+                12,
+                -22
+              ],
+              "size": [
+                2,
+                10,
+                40
+              ],
+              "uv": [
+                0,
+                32
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wheel_fl",
+          "parent": "root",
+          "pivot": [
+            -30,
+            2,
+            -34
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -38,
+                -6,
+                -42
+              ],
+              "size": [
+                10,
+                16,
+                16
+              ],
+              "uv": [
+                0,
+                48
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wheel_fr",
+          "parent": "root",
+          "pivot": [
+            30,
+            2,
+            -34
+          ],
+          "cubes": [
+            {
+              "origin": [
+                28,
+                -6,
+                -42
+              ],
+              "size": [
+                10,
+                16,
+                16
+              ],
+              "uv": [
+                0,
+                48
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wheel_rl",
+          "parent": "root",
+          "pivot": [
+            -30,
+            2,
+            26
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -38,
+                -6,
+                18
+              ],
+              "size": [
+                10,
+                16,
+                16
+              ],
+              "uv": [
+                0,
+                48
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wheel_rr",
+          "parent": "root",
+          "pivot": [
+            30,
+            2,
+            26
+          ],
+          "cubes": [
+            {
+              "origin": [
+                28,
+                -6,
+                18
+              ],
+              "size": [
+                10,
+                16,
+                16
+              ],
+              "uv": [
+                0,
+                48
+              ]
+            }
+          ]
+        },
+        {
+          "name": "flux",
+          "parent": "body",
+          "pivot": [
+            0,
+            14,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                16,
+                -4
+              ],
+              "size": [
+                8,
+                4,
+                8
+              ],
+              "uv": [
+                40,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "name": "front",
+          "parent": "body",
+          "pivot": [
+            0,
+            4,
+            -52
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26,
+                2,
+                -60
+              ],
+              "size": [
+                52,
+                8,
+                4
+              ],
+              "uv": [
+                0,
+                58
+              ]
+            },
+            {
+              "origin": [
+                -26,
+                6,
+                -62
+              ],
+              "size": [
+                10,
+                6,
+                2
+              ],
+              "uv": [
+                0,
+                62
+              ]
+            },
+            {
+              "origin": [
+                16,
+                6,
+                -62
+              ],
+              "size": [
+                10,
+                6,
+                2
+              ],
+              "uv": [
+                0,
+                62
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rear",
+          "parent": "body",
+          "pivot": [
+            0,
+            8,
+            36
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26,
+                4,
+                36
+              ],
+              "size": [
+                52,
+                6,
+                4
+              ],
+              "uv": [
+                0,
+                58
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                14,
+                30
+              ],
+              "size": [
+                8,
+                8,
+                8
+              ],
+              "uv": [
+                40,
+                32
+              ]
+            }
+          ]
+        },
+        {
+          "name": "vents",
+          "parent": "body",
+          "pivot": [
+            0,
+            6,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -30,
+                6,
+                -20
+              ],
+              "size": [
+                2,
+                6,
+                30
+              ],
+              "uv": [
+                40,
+                0
+              ]
+            },
+            {
+              "origin": [
+                28,
+                6,
+                -20
+              ],
+              "size": [
+                2,
+                6,
+                30
+              ],
+              "uv": [
+                40,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

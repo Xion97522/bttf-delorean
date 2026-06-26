@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GRG",
+    "RCR",
+    "GRG"
+  ],
+  "key": {
+    "G": {"item": "minecraft:gold_ingot"},
+    "R": {"item": "minecraft:redstone"},
+    "C": {"item": "minecraft:diamond"}
+  },
+  "result": {"item": "bttfmod:flux_capacitor", "count": 1}
+}

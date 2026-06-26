@@ -1,0 +1,47 @@
+name: Build BTTF Mod
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.4'
+
+      - name: Cache Forge / Minecraft
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-forge-${{ hashFiles('build.gradle') }}
+          restore-keys: ${{ runner.os }}-forge-
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build
+        run: gradle build --no-daemon
+        env:
+          GRADLE_OPTS: "-Xmx3g"
+
+      - name: Upload mod JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: bttfmod-1.20.1
+          path: build/libs/bttfmod-*.jar
+          if-no-files-found: error

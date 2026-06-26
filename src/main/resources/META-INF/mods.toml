@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[dependencies.bttfmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.2.0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.bttfmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.bttfmod]]
+    modId="geckolib"
+    mandatory=true
+    versionRange="[4.3,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mods]]
+modId="bttfmod"
+version="1.0.0"
+displayName="BTTF DeLorean Mod"
+description='''
+Drive the DeLorean time machine in Minecraft! Use a flux capacitor to travel through time.
+'''
+
+[[authors]]
+name="CrAzE / NELABEL"
